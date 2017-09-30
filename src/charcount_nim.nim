@@ -7,7 +7,8 @@ const s = "aazauizuiufayuzfabzyeuofbzduyvbihiufauhi"
 var count: CharCount
 
 for c in s:
-  inc(count[int(c)])
+  let index = int(c)
+  inc(count[index])
 
 for index, x in count.pairs:
   if x != 0:
